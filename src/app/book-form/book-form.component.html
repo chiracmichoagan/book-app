@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div class="container mt-3 pt-5" *ngIf="affiche">
+        <form [formGroup]="inputForm" (ngSubmit)="validationFormulaire()">
+          <div class="mb-3 mt-3">
+            <label for="text" class="form-label">Titre:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="title"
+              placeholder="Entrez le title du livre"
+              formControlName="title"
+            />
+          </div>
+          <div class="mb-3 mt-3">
+            <label for="text" class="form-label">Auteur:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="Auteur"
+              placeholder="Entrez le Auteur du livre"
+              formControlName="Auteur"
+            />
+          </div>
+          <div class="mb-3 mt-3">
+            <label for="text" class="form-label">Status:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="title"
+              placeholder="Entrez le Status du livre"
+              formControlName="Status"
+            />
+          </div>
+
+          <div class="mb-3 mt-3">
+            <button type="submit" class="btn btn-primary">Enregitrez</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
