@@ -26,6 +26,7 @@ export class ContactComponent {
       phone: ''
     });
   };
+  
   // updateForm() {
   //   this.contactForm.setValue({
   //     name : 'dona',
